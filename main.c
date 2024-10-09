@@ -4,15 +4,15 @@ void game(){
 	int choice=5;
 	while(choice<1||choice>4){
 	printf("--------------------------\n"); 
-	printf("--------Ñ¡ÔñÄÑ¶È----------\n"); 
+	printf("--------é€‰æ‹©éš¾åº¦----------\n"); 
 	printf("--------------------------\n"); 
-	printf("---------1.»ù´¡-----------\n"); 
+	printf("---------1.åŸºç¡€-----------\n"); 
 	printf("--------------------------\n"); 
-	printf("---------2.ÖĞ¼¶-----------\n"); 
+	printf("---------2.ä¸­çº§-----------\n"); 
 	printf("--------------------------\n");
-	printf("---------3.×¨¼Ò-----------\n"); 
+	printf("---------3.ä¸“å®¶-----------\n"); 
 	printf("--------------------------\n");
-	printf("--------4.×Ô¶¨Òå----------\n"); 
+	printf("--------4.è‡ªå®šä¹‰----------\n"); 
 	printf("--------------------------\n");
 	scanf("%d",&choice);
 	system("cls");
@@ -21,8 +21,8 @@ void game(){
 		case 2:ROW=NORMAL_ROW;COL=NORMAL_COL;COUNT=NORMAL_COUNT;Mode=2;break;
 		case 3:ROW=DEFFCULT_ROW;COL=DEFFCULT_COL;COUNT=DEFFCULT_COUNT;Mode=3;break;
 		case 4:Change();Mode=4;break;
-		case 114514:if(Tool==0){printf("''Í¸ÊÓÄ£Ê½¿ªÆô''\n");Tool=1;}else{Color(2);printf("''È¡Ïû×÷±×''\n");Tool=0;}system("pause");system("cls");Color(12);break;
-		default:printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë:\n");break;
+		case 114514:if(Tool==0){printf("''é€è§†æ¨¡å¼å¼€å¯''\n");Tool=1;}else{Color(2);printf("''å–æ¶ˆä½œå¼Š''\n");Tool=0;}system("pause");system("cls");Color(12);break;
+		default:printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥:\n");break;
 	}
 	}
 	char board[ROWS][COLS],show[ROWS][COLS];
@@ -43,13 +43,13 @@ int main() {
 	while(1){
 	Color(2); 
 	printf("--------------------------\n"); 
-	printf("----------É¨À×------------\n");
+	printf("----------æ‰«é›·------------\n");
 	printf("--------------------------\n");
-	printf("---------1.ÓÎÍæ-----------\n"); 
+	printf("---------1.æ¸¸ç©-----------\n"); 
 	printf("--------------------------\n"); 
-	printf("--------2.³É¼¨°ñ----------\n"); 
+	printf("--------2.æˆç»©æ¦œ----------\n"); 
 	printf("--------------------------\n"); 
-	printf("---------3.ÍË³ö-----------\n"); 
+	printf("---------3.é€€å‡º-----------\n"); 
 	printf("--------------------------\n");
 	int choice;
 	scanf("%d",&choice); 
@@ -57,8 +57,8 @@ int main() {
 	switch(choice){
 		case 1: Color(12); game(); break;
 		case 2: Color(3); Text(); break;
-		case 3: Color(7); printf("ÓÎÏ·½áÊø¡£¡£¡£"); exit(0); break;
-		default: Color(6); printf("\n ¹¹  Ë¼ - ÁÎ  Î°£¿\ndog shit neo why?\n\n"); break;
+		case 3: Color(7); printf("æ¸¸æˆç»“æŸã€‚ã€‚ã€‚"); exit(0); break;
+		default: Color(6); printf("\n ä¸  æ˜¯ - å“¥  ä»¬ï¼Ÿ\n"); break;
 	}
 	system("pause");
 	system("cls");
